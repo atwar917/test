@@ -73,14 +73,14 @@
   
   <h2>Choose a pizza base:</h2>
   
-  <p>Small ($6.00)</p>
-  <button class="ingredient-btn" onclick="addToCart('Small Pizza Base', 6.0)">Add to Cart</button>
+  <input type="radio" name="base" id="small" value="Small Pizza Base" onclick="addToCart('Small Pizza Base', 6.0)">
+  <label for="small">Small ($6.00)</label><br>
   
-  <p>Medium ($8.00)</p>
-  <button class="ingredient-btn" onclick="addToCart('Medium Pizza Base', 8.0)">Add to Cart</button>
+  <input type="radio" name="base" id="medium" value="Medium Pizza Base" onclick="addToCart('Medium Pizza Base', 8.0)">
+  <label for="medium">Medium ($8.00)</label><br>
   
-  <p>Large ($10.00)</p>
-  <button class="ingredient-btn" onclick="addToCart('Large Pizza Base', 10.0)">Add to Cart</button>
+  <input type="radio" name="base" id="large" value="Large Pizza Base" onclick="addToCart('Large Pizza Base', 10.0)">
+  <label for="large">Large ($10.00)</label><br>
   
   <h2>Choose pizza toppings:</h2>
   
@@ -90,7 +90,8 @@
   <button class="ingredient-btn" onclick="addToCart('Onion', 0.75)">Onion ($0.75)</button>
   
   <div class="shopping-cart">
-    <h3>Shopping Cart</h3>
+    <h3>Shopping
+</h3>
     <div id="cart-items"></div>
     <div class="total-price">Total Price: $<span id="total-price">0.00</span></div>
   </div>
